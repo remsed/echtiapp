@@ -1,0 +1,33 @@
+MDScreen:
+    name: "login"
+    MDLabel:
+        text: "Sign-in to your account"
+        font_size: "23sp"
+        color: 100/255, 100/255, 1000/255, 1
+        pos_hint: {"center_x": .5, "center_y": .90}
+        halign: 'center'
+        valign: 'middle'
+    MDTextField:
+        id: user_name
+        hint_text: "Username"
+        mode: "rectangle"
+        pos_hint: {"center_x": .5, "center_y": .80}
+        size_hint_x: .5
+        icon_left: "account"
+    MDTextField:
+        id: pass_word
+        hint_text: "Password"
+        mode: "rectangle"
+        pos_hint: {"center_x": .5, "center_y": .70}
+        size_hint_x: .5
+        password: True
+        icon_left: "key-variant"
+    MDFillRoundFlatIconButton:
+        text: "LOGIN"
+        icon: "login"
+        pos_hint: {"center_x": .5, "center_y": .60}
+    MDFillRoundFlatIconButton:
+        text: "SIGN-UP"
+        icon: "account-plus"
+        pos_hint: {"center_x": .5, "center_y": .50}
+
